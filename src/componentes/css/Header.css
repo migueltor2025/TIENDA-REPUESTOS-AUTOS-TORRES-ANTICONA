@@ -1,0 +1,71 @@
+.header {
+  background-color: #1a237e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo - título - carrito */
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 120px; /* Logo grande */
+  width: auto;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 38px;   /* 🔥 Título bien grande */
+  font-weight: bold;
+  letter-spacing: 1px; /* separación elegante */
+  text-transform: uppercase; /* opcional: todo en mayúsculas */
+}
+
+.cart-icon {
+  font-size: 34px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 5px 9px;
+  position: absolute;
+  top: -10px;
+  right: -14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 📱 Versión móvil */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .logo img {
+    height: 90px;
+  }
+
+  .header-title {
+    font-size: 28px; /* Más grande en móvil también */
+  }
+
+  .cart-icon {
+    font-size: 30px;
+  }
+}
