@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/Header.css";
-import logo from "../img/logo.png"; // 👉 importa tu logo
+import logo from "../img/LOGO.png"; // 👉 importa tu logo
 
 const Header = ({ cartCount, onCartClick }) => {
   return (
